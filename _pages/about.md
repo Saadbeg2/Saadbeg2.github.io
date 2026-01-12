@@ -1,6 +1,10 @@
 ---
-permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+---
+title: "基于Swin Transformer的图像分类模型训练与评估"
+collection: portfolio
+type: "Machine Learning"
+permalink: /portfolio/image-classification-swin-transformer
+date: 2026-01-12
 author_profile: true
 redirect_from: 
   - /about/
