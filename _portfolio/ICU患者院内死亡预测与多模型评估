@@ -667,22 +667,3 @@ _XGBoost 特征重要性条形图直观地展示了模型在预测过程中最�
 2. 尝试深度学习模型，以捕捉数据中更复杂的非线性关系。
 3. 进行更广泛的超参数调优和模型集成，进一步提升预测性能。
 4. 结合临床领域知识，对模型的预测结果进行更深入的解释和验证，以促进其在实际医疗场景中的应用。
----
-```
-
-**行动指引：**
-
-1.  **创建文件夹：** 在您的网站项目的 `images/portfolio/` 目录下，创建一个名为 `picu-outcome-prediction` 的新文件夹。
-    *   例如：`your_website_root/images/portfolio/picu-outcome-prediction/`
-2.  **保存图片：**
-    *   回到您的 Jupyter Notebook。
-    *   运行所有相关的代码单元格，确保生成了所有图表。
-    *   手动保存“图片资源清单”中列出的图片，并使用建议的文件名。
-    *   将这些保存的图片文件上传到您在第一步中创建的 `images/portfolio/picu-outcome-prediction/` 文件夹。
-3.  **创建 Markdown 文件：**
-    *   在您的网站项目用于存放作品集文章的目录下（例如 `_portfolio/`），创建一个新的 Markdown 文件，命名为 `picu-outcome-prediction.md`。
-4.  **粘贴内容：** 将我上面生成的 Markdown 内容（从第一个 `---` 到最后一个 `---`）完整地粘贴到 `picu-outcome-prediction.md` 文件中。
-5.  **手动填充模型评估结果：** 请注意，在“各模型评估结果一览”表格中，我使用了 `{{...}}` 占位符。您需要在运行完模型评估代码后，从 Jupyter Notebook 的输出中获取 SVM、RF 和 XGBoost 各自的 ROC AUC, PR AUC, Accuracy, Precision, Recall, F1-Score 等指标，然后手动替换 Markdown 文件中的相应占位符。
-6.  **验证效果：** 运行您的网站项目，检查新创建的作品集页面是否正确显示，包括所有文本内容和图片。
-
-如果您在任何步骤中遇到困难，或者需要对生成的 Markdown 内容进行调整，请随时告诉我！
