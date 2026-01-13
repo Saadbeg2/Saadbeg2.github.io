@@ -30,7 +30,7 @@ redirect_from:
 
 ## 🔬 Research Interests
 
-My research is mainly magnetic resonance radio frequency coil, they say that people who do radio frequency are magicians, because this thing is really invisible and can not be touched, found the problem can only go to the simulation to find the problem. s11 curve adjusted more than the life of the flat. I'm a nocturnal lab animal, messages to me in the wee hours of the morning are often answered in seconds, scanning data during the day, processing data at night, and playing with my phone in the wee hours of the morning. Resident Soldering Bench Player** - Soldering Iron in Hand, RF Signal in Mind (of the world) The coils work just fine, optimization is impossible unless the mentor and reviewers ask for it, well then I'm always going to be asked for it.
+My research is mainly magnetic resonance radio frequency coil, they say that people who do radio frequency are magicians, because this thing is really invisible and can not be touched, found the problem can only go to the simulation to find the problem. s11 curve adjusted more than the life of the flat. I'm a nocturnal lab animal, messages to me in the wee hours of the morning are often answered in seconds, scanning data during the day, processing data at night, and playing with my phone in the wee hours of the morning. Resident Soldering Bench Player-Soldering Iron in Hand, RF Signal in Mind (of the world) The coils work just fine, optimization is impossible unless the mentor and reviewers ask for it, well then I'm always going to be asked for it.
 
 ---
 
