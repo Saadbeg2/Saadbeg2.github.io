@@ -42,26 +42,6 @@ My research is mainly magnetic resonance radio frequency coil, they say that peo
 
 Music Ski Travel Photography, dream is to be able to ski all over the world's snow parks, constantly experiencing and recording.
 
-## 🛠️ 技术栈 | Tech Stack
-
-<div align="center">
-
-| 熟练掌握 | 听说过 | 正在逃避 |
-|:---:|:---:|:---:|
-| ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) | ![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white) | ![Assembly](https://img.shields.io/badge/-Assembly-654FF0?style=flat-square&logo=assemblyscript&logoColor=white) |
-| ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white) | ![COBOL](https://img.shields.io/badge/-COBOL-2496ED?style=flat-square) |
-| ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white) | ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) | ![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white)* |
-
-*会用就是熟练掌握
-
-</div>
-
----
-
-## 📫Contact Me
-
-- 📧 Email: `maxianghe_2002@163.com`
-- 🐦 Twitter: [保密]
 
 <div align="center">
 
