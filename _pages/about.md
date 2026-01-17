@@ -158,6 +158,6 @@ redirect_from:
   </li>
   <li>
     <span class="news-year">2024</span>
-    <span class="news-text">Team Lead for Mirage 91 at CYBATHLON 2024</span>
+    <span class="news-text">Published in Engineering Applications of Artificial Intelligence (IF: 8)</span>
   </li>
 </ul>

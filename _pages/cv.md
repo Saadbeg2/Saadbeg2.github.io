@@ -148,7 +148,7 @@ redirect_from:
     <span class="date">2020 - Present</span>
   </div>
   <div class="location">Graz University of Technology</div>
-  <p>Developing deep learning frameworks for EEG classification. Collaborating with UCSD and Daimler Truck AG. Teaching BCI courses. Team Lead for CYBATHLON 2024.</p>
+  <p>Developing deep learning frameworks for EEG classification. Collaborating with UCSD and Daimler Truck AG. Teaching BCI courses.</p>
 </div>
 
 <div class="cv-item">
