@@ -134,63 +134,25 @@ redirect_from:
 }
 </style>
 
-<div class="hero-section">
-  <h2>Shayan Jalilpour, PhD</h2>
-  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;"><strong>Biomedical Engineer & Researcher</strong></p>
-  <p style="opacity: 0.9; margin-bottom: 0;">Working with <a href="https://grazbci.at/" style="color: white; text-decoration: underline;">Prof. Gernot R. Müller-Putz</a> at Graz University of Technology</p>
-  <p style="opacity: 0.9; font-size: 0.95rem;">Developing interpretable deep learning frameworks for EEG analysis and Brain-Computer Interfaces</p>
-</div>
+<h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
 
-<div class="stats-container">
-  <div class="stat-box">
-    <span class="number">6</span>
-    <span class="label">Journal Papers</span>
-  </div>
-  <div class="stat-box">
-    <span class="number">5</span>
-    <span class="label">Conferences</span>
-  </div>
-  <div class="stat-box">
-    <span class="number">4</span>
-    <span class="label">Q1 Journals</span>
-  </div>
-  <div class="stat-box">
-    <span class="number">5+</span>
-    <span class="label">Years Research</span>
-  </div>
-</div>
+<p style="color: var(--about-text-body); line-height: 1.8; text-align: justify;">
+Currently, I am a postdoctoral researcher at the <a href="https://grazbci.at/" style="color: var(--about-accent);">Institute of Neural Engineering</a> at Graz University of Technology, working with <a href="https://grazbci.at/" style="color: var(--about-accent);">Prof. Gernot R. Müller-Putz</a>. My research focuses on developing interpretable deep learning frameworks for EEG analysis and Brain-Computer Interfaces.
+</p>
 
-<h2 class="section-title"><i class="fas fa-microscope"></i> Research Focus</h2>
+<p style="color: var(--about-text-body); line-height: 1.8; text-align: justify;">
+From 2020-2025, I was a doctoral researcher at Graz University of Technology, Austria. I worked at the Institute of Neural Engineering in the BCI research group. During my PhD, I developed novel methods for interpretable deep learning in EEG-based brain-computer interfaces, achieving 96.8% subject-independent accuracy while reducing model parameters by more than 50x. I received my Ph.D. (Dr.techn.) from TU Graz in 2025.
+</p>
 
-<div class="research-grid">
-  <div class="research-card">
-    <h3><i class="fas fa-brain"></i> Interpretable Deep Learning</h3>
-    <p>Developing transparent neural network architectures that provide insights into how models process brain signals, achieving 96.8% accuracy with >50x parameter reduction.</p>
-  </div>
-  <div class="research-card">
-    <h3><i class="fas fa-laptop-medical"></i> Brain-Computer Interfaces</h3>
-    <p>Creating systems that decode neural signals for real-time human-machine interaction, including hybrid BCI spellers with 93% accuracy.</p>
-  </div>
-  <div class="research-card">
-    <h3><i class="fas fa-users"></i> Cross-Subject Classification</h3>
-    <p>Building robust EEG models that generalize across different individuals without subject-specific calibration.</p>
-  </div>
-  <div class="research-card">
-    <h3><i class="fas fa-clock"></i> Real-time Neural Decoding</h3>
-    <p>Developing asynchronous classifiers for cognitive state detection optimized for online deployment in human-machine systems.</p>
-  </div>
-</div>
+<p style="color: var(--about-text-body); line-height: 1.8; text-align: justify;">
+Prior to that, I received my M.Sc. degree in Biomedical Engineering from the Electrical Engineering faculty of Sharif University of Technology, Tehran, Iran (2019), where I developed a hybrid BCI speller achieving 93% classification accuracy. I obtained my B.Sc. degree in Electrical Engineering from Guilan University, Rasht, Iran (2016).
+</p>
 
-<h2 class="section-title"><i class="fas fa-handshake"></i> Collaborations</h2>
+<h2 class="section-title"><i class="fas fa-microscope"></i> Research Interests</h2>
 
-<p>Working with leading institutions and industry partners:</p>
-
-<div style="margin: 1rem 0;">
-  <span class="collab-badge"><i class="fas fa-university"></i> University of San Diego (UCSD)</span>
-  <span class="collab-badge"><i class="fas fa-truck"></i> Daimler Truck AG & FKFS</span>
-  <span class="collab-badge"><i class="fas fa-graduation-cap"></i> University of Lisbon</span>
-  <span class="collab-badge"><i class="fas fa-award"></i> Marshall Plan Foundation</span>
-</div>
+<p style="color: var(--about-text-body); line-height: 1.8;">
+My research interests include interpretable deep learning, brain-computer interfaces, EEG signal processing, cross-subject classification, and real-time neural decoding.
+</p>
 
 <h2 class="section-title"><i class="fas fa-newspaper"></i> Recent News</h2>
 
@@ -204,17 +166,11 @@ redirect_from:
   <span class="date">2024</span> - Published interpretable deep learning framework in <strong>Engineering Applications of AI</strong> (IF: 8, Q1)
 </div>
 
-<h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
-
-Currently serving as **Lecturer** at Graz University of Technology:
-
-- **Non-invasive Brain-Computer Interfaces 1 & 2** - Machine learning, signal processing, BCI design
-- **Fundamentals of Biomedical Engineering** - EEG Laboratory
-- **Guest Lecturer** at University of Lisbon (2025)
-
 <h2 class="section-title"><i class="fas fa-envelope"></i> Contact</h2>
 
+<p style="color: var(--about-text-body);">
 I'm always interested in discussing research collaborations, especially in the areas of interpretable AI, EEG signal processing, and brain-computer interfaces.
+</p>
 
 <p style="margin-top: 1rem;">
   <a href="mailto:shayanjalilpour@gmail.com" style="display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.6rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: 500;">
