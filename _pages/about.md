@@ -8,8 +8,36 @@ redirect_from:
 ---
 
 <style>
+/* CSS Variables for theme support */
+:root {
+  --about-text-primary: #222;
+  --about-text-body: #333;
+  --about-bg-card: #ffffff;
+  --about-bg-light: #f8f9fa;
+  --about-accent: #667eea;
+  --about-accent-secondary: #764ba2;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --about-text-primary: #e8e8e8;
+    --about-text-body: #d0d0d0;
+    --about-bg-card: #2a2a3a;
+    --about-bg-light: #1e1e2e;
+  }
+}
+
+/* Also support class-based dark mode */
+.dark-mode, [data-theme="dark"] {
+  --about-text-primary: #e8e8e8;
+  --about-text-body: #d0d0d0;
+  --about-bg-card: #2a2a3a;
+  --about-bg-light: #1e1e2e;
+}
+
 .hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--about-accent) 0%, var(--about-accent-secondary) 100%);
   color: white;
   padding: 2rem;
   border-radius: 12px;
@@ -27,11 +55,11 @@ redirect_from:
   margin: 2rem 0;
 }
 .research-card {
-  background: linear-gradient(145deg, #f8f9fa, #ffffff);
+  background: var(--about-bg-card);
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  border-left: 4px solid #667eea;
+  border-left: 4px solid var(--about-accent);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .research-card:hover {
@@ -39,9 +67,13 @@ redirect_from:
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 .research-card h3 {
-  color: #667eea;
+  color: var(--about-accent);
   margin-top: 0;
   font-size: 1.1rem;
+}
+.research-card p {
+  color: var(--about-text-body);
+  margin-bottom: 0;
 }
 .stats-container {
   display: flex;
@@ -52,38 +84,39 @@ redirect_from:
 .stat-box {
   flex: 1;
   min-width: 140px;
-  background: #f8f9fa;
+  background: var(--about-bg-light);
   padding: 1.2rem;
   border-radius: 10px;
   text-align: center;
-  border-bottom: 3px solid #667eea;
+  border-bottom: 3px solid var(--about-accent);
 }
 .stat-box .number {
   font-size: 2rem;
   font-weight: 700;
-  color: #667eea;
+  color: var(--about-accent);
   display: block;
 }
 .stat-box .label {
   font-size: 0.85rem;
-  color: #666;
+  color: var(--about-text-body);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 .news-item {
   padding: 1rem;
-  border-left: 3px solid #667eea;
-  background: #f8f9fa;
+  border-left: 3px solid var(--about-accent);
+  background: var(--about-bg-light);
   margin-bottom: 1rem;
   border-radius: 0 8px 8px 0;
+  color: var(--about-text-body);
 }
 .news-item .date {
   font-weight: 600;
-  color: #667eea;
+  color: var(--about-accent);
 }
 .collab-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, var(--about-accent), var(--about-accent-secondary));
   color: white;
   padding: 0.4rem 1rem;
   border-radius: 20px;
@@ -94,17 +127,17 @@ redirect_from:
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #333;
-  border-bottom: 2px solid #667eea;
+  color: var(--about-accent);
+  border-bottom: 2px solid var(--about-accent);
   padding-bottom: 0.5rem;
   margin-top: 2.5rem;
 }
 </style>
 
 <div class="hero-section">
-  <h2>Shayan Jalilpour</h2>
-  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;"><strong>PhD Candidate in Biomedical Engineering</strong></p>
-  <p style="opacity: 0.9; margin-bottom: 0;">Graz University of Technology, Austria</p>
+  <h2>Shayan Jalilpour, PhD</h2>
+  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;"><strong>Biomedical Engineer & Researcher</strong></p>
+  <p style="opacity: 0.9; margin-bottom: 0;">Working with <a href="https://grazbci.at/" style="color: white; text-decoration: underline;">Prof. Gernot R. Müller-Putz</a> at Graz University of Technology</p>
   <p style="opacity: 0.9; font-size: 0.95rem;">Developing interpretable deep learning frameworks for EEG analysis and Brain-Computer Interfaces</p>
 </div>
 
@@ -162,10 +195,10 @@ redirect_from:
 <h2 class="section-title"><i class="fas fa-newspaper"></i> Recent News</h2>
 
 <div class="news-item">
-  <span class="date">2025</span> - Received <strong>Teaching Grant (15k)</strong> for Joint Online Course from Graz University of Technology with University of Lisbon
+  <span class="date">2025</span> - Received <strong>Teaching Grant (€15k)</strong> for Joint Online Course from Graz University of Technology with University of Lisbon
 </div>
 <div class="news-item">
-  <span class="date">2024</span> - Awarded <strong>Austrian Marshall Plan Scholarship (7.5k)</strong> for EU-US research exchange collaboration with UCSD
+  <span class="date">2024</span> - Awarded <strong>Austrian Marshall Plan Scholarship (€7.5k)</strong> for EU-US research exchange collaboration with UCSD
 </div>
 <div class="news-item">
   <span class="date">2024</span> - Published interpretable deep learning framework in <strong>Engineering Applications of AI</strong> (IF: 8, Q1)

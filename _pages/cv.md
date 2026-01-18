@@ -10,6 +10,43 @@ redirect_from:
 {% include base_path %}
 
 <style>
+/* CSS Variables for theme support */
+:root {
+  --cv-text-primary: #222;
+  --cv-text-secondary: #444;
+  --cv-text-body: #333;
+  --cv-bg-card: #ffffff;
+  --cv-bg-light: #f8f9fa;
+  --cv-border-light: #e8e8e8;
+  --cv-border-medium: #ddd;
+  --cv-accent: #667eea;
+  --cv-accent-secondary: #764ba2;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cv-text-primary: #e8e8e8;
+    --cv-text-secondary: #c0c0c0;
+    --cv-text-body: #d0d0d0;
+    --cv-bg-card: #2a2a3a;
+    --cv-bg-light: #1e1e2e;
+    --cv-border-light: #3a3a4a;
+    --cv-border-medium: #4a4a5a;
+  }
+}
+
+/* Also support class-based dark mode */
+.dark-mode, [data-theme="dark"] {
+  --cv-text-primary: #e8e8e8;
+  --cv-text-secondary: #c0c0c0;
+  --cv-text-body: #d0d0d0;
+  --cv-bg-card: #2a2a3a;
+  --cv-bg-light: #1e1e2e;
+  --cv-border-light: #3a3a4a;
+  --cv-border-medium: #4a4a5a;
+}
+
 .cv-section {
   margin-bottom: 2.5rem;
 }
@@ -17,27 +54,27 @@ redirect_from:
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #667eea;
-  border-bottom: 3px solid #667eea;
+  color: var(--cv-accent);
+  border-bottom: 3px solid var(--cv-accent);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
   font-size: 1.4rem;
 }
 .edu-card {
-  background: linear-gradient(145deg, #f8f9fa, #ffffff);
+  background: var(--cv-bg-card);
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  border-left: 4px solid #667eea;
+  border-left: 4px solid var(--cv-accent);
 }
 .edu-card h3 {
-  color: #333;
+  color: var(--cv-text-primary);
   margin: 0 0 0.3rem 0;
   font-size: 1.1rem;
 }
 .edu-card .institution {
-  color: #667eea;
+  color: var(--cv-accent);
   font-style: italic;
   margin-bottom: 0.5rem;
 }
@@ -46,28 +83,29 @@ redirect_from:
   flex-wrap: wrap;
   gap: 1rem;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--cv-text-secondary);
   margin-bottom: 0.5rem;
 }
 .edu-card .meta span {
   display: flex;
   align-items: center;
   gap: 0.3rem;
+  color: var(--cv-text-secondary);
 }
 .edu-card .description {
-  color: #555;
+  color: var(--cv-text-body);
   font-size: 0.95rem;
   margin-top: 0.5rem;
   padding-top: 0.5rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--cv-border-medium);
 }
 .exp-card {
-  background: #fff;
+  background: var(--cv-bg-card);
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-  border: 1px solid #e8e8e8;
+  border: 1px solid var(--cv-border-light);
   position: relative;
 }
 .exp-card::before {
@@ -77,19 +115,19 @@ redirect_from:
   top: 0;
   bottom: 0;
   width: 4px;
-  background: linear-gradient(180deg, #667eea, #764ba2);
+  background: linear-gradient(180deg, var(--cv-accent), var(--cv-accent-secondary));
   border-radius: 4px 0 0 4px;
 }
 .exp-card h3 {
-  color: #333;
+  color: var(--cv-text-primary);
   margin: 0 0 0.3rem 0;
 }
 .exp-card .company {
-  color: #667eea;
+  color: var(--cv-accent);
   font-weight: 500;
 }
 .exp-card .period {
-  color: #888;
+  color: var(--cv-text-secondary);
   font-size: 0.9rem;
 }
 .exp-card ul {
@@ -98,7 +136,7 @@ redirect_from:
 }
 .exp-card li {
   margin-bottom: 0.6rem;
-  color: #555;
+  color: var(--cv-text-body);
 }
 .skills-grid {
   display: grid;
@@ -106,13 +144,13 @@ redirect_from:
   gap: 1rem;
 }
 .skill-category {
-  background: linear-gradient(145deg, #f8f9fa, #fff);
+  background: var(--cv-bg-card);
   padding: 1.2rem;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 .skill-category h4 {
-  color: #667eea;
+  color: var(--cv-accent);
   margin: 0 0 0.8rem 0;
   font-size: 0.95rem;
   display: flex;
@@ -121,8 +159,8 @@ redirect_from:
 }
 .skill-tag {
   display: inline-block;
-  background: #e8eeff;
-  color: #667eea;
+  background: rgba(102, 126, 234, 0.15);
+  color: var(--cv-accent);
   padding: 0.3rem 0.7rem;
   border-radius: 15px;
   font-size: 0.85rem;
@@ -133,12 +171,12 @@ redirect_from:
   align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
-  background: #f8f9fa;
+  background: var(--cv-bg-light);
   border-radius: 8px;
   margin-bottom: 0.8rem;
 }
 .award-year {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, var(--cv-accent), var(--cv-accent-secondary));
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 6px;
@@ -147,7 +185,7 @@ redirect_from:
   white-space: nowrap;
 }
 .award-text {
-  color: #444;
+  color: var(--cv-text-body);
 }
 .lang-table {
   width: 100%;
@@ -155,7 +193,7 @@ redirect_from:
   border-spacing: 0;
 }
 .lang-table th {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, var(--cv-accent), var(--cv-accent-secondary));
   color: white;
   padding: 0.8rem 1rem;
   text-align: left;
@@ -168,7 +206,9 @@ redirect_from:
 }
 .lang-table td {
   padding: 0.8rem 1rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--cv-border-light);
+  background: var(--cv-bg-light);
+  color: var(--cv-text-body);
 }
 .lang-table tr:last-child td:first-child {
   border-radius: 0 0 0 8px;
@@ -178,39 +218,28 @@ redirect_from:
 }
 .teaching-item {
   padding: 1rem;
-  border-left: 3px solid #667eea;
-  background: #fafafa;
+  border-left: 3px solid var(--cv-accent);
+  background: var(--cv-bg-light);
   margin-bottom: 0.8rem;
   border-radius: 0 8px 8px 0;
 }
 .teaching-item h4 {
   margin: 0 0 0.3rem 0;
-  color: #333;
+  color: var(--cv-text-primary);
 }
 .teaching-item .course {
-  color: #667eea;
+  color: var(--cv-accent);
   font-style: italic;
 }
-.reference-card {
-  background: linear-gradient(145deg, #f8f9fa, #fff);
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  margin-bottom: 1rem;
+.teaching-item p {
+  color: var(--cv-text-body);
 }
-.reference-card h4 {
-  color: #667eea;
-  margin: 0 0 0.3rem 0;
-}
-.reference-card .title {
-  color: #666;
-  font-size: 0.9rem;
-}
-.reference-card .email {
-  margin-top: 0.5rem;
-}
-.reference-card .email a {
-  color: #667eea;
+.service-item {
+  padding: 0.8rem;
+  background: var(--cv-bg-light);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  color: var(--cv-text-body);
 }
 </style>
 
@@ -221,12 +250,12 @@ redirect_from:
     <h3>PhD in Biomedical Engineering</h3>
     <div class="institution">Graz University of Technology - Department of CSBME</div>
     <div class="meta">
-      <span><i class="fas fa-calendar"></i> 2020 - Present</span>
+      <span><i class="fas fa-calendar"></i> 2020 - 2025</span>
       <span><i class="fas fa-map-marker-alt"></i> Graz, Austria</span>
       <span><i class="fas fa-star"></i> GPA: 1.4/5.0</span>
     </div>
     <div class="description">
-      <strong>Supervisor:</strong> Prof. Gernot Muller-Putz<br>
+      <strong>Supervisor:</strong> <a href="https://grazbci.at/" style="color: #667eea;">Prof. Gernot R. Müller-Putz</a><br>
       <strong>Dissertation:</strong> Developed interpretable deep learning frameworks for EEG data. Applied statistical analysis, asynchronous decoding, and multi-class classification on brain signals.
     </div>
   </div>
@@ -258,7 +287,7 @@ redirect_from:
   <h2 class="cv-section-title"><i class="fas fa-briefcase"></i> Professional Experience</h2>
 
   <div class="exp-card">
-    <h3>University Assistant (Doctoral Researcher)</h3>
+    <h3>Postdoctoral Researcher</h3>
     <div class="company">Graz University of Technology</div>
     <div class="period"><i class="fas fa-calendar"></i> 2020 - Present | <i class="fas fa-map-marker-alt"></i> Graz, Austria</div>
     <ul>
@@ -345,19 +374,19 @@ redirect_from:
   <div class="teaching-item">
     <h4>Guest Lecturer</h4>
     <div class="course">Non-invasive Brain-Computer Interfaces 1 (KU) - 2025</div>
-    <p style="margin: 0.5rem 0 0 0; color: #666;">Received Teaching Grant for joint online course with TUG</p>
+    <p style="margin: 0.5rem 0 0 0;">Received Teaching Grant for joint online course with TUG</p>
   </div>
 
   <h4 style="color: #667eea; margin-top: 1.5rem;"><i class="fas fa-university"></i> Graz University of Technology</h4>
   <div class="teaching-item">
     <h4>Lecturer</h4>
     <div class="course">Non-invasive Brain-Computer Interfaces 1 (KU) - 2020-2025</div>
-    <p style="margin: 0.5rem 0 0 0; color: #666;">Machine learning, statistical analysis, neurophysiological analysis, feature extraction, pattern recognition</p>
+    <p style="margin: 0.5rem 0 0 0;">Machine learning, statistical analysis, neurophysiological analysis, feature extraction, pattern recognition</p>
   </div>
   <div class="teaching-item">
     <h4>Lecturer</h4>
     <div class="course">Non-invasive Brain-Computer Interfaces 2 (KU) - 2021-2024</div>
-    <p style="margin: 0.5rem 0 0 0; color: #666;">Online data processing, classification, BCI task design, EEG instrumentation</p>
+    <p style="margin: 0.5rem 0 0 0;">Online data processing, classification, BCI task design, EEG instrumentation</p>
   </div>
   <div class="teaching-item">
     <h4>Lecturer</h4>
@@ -378,17 +407,15 @@ redirect_from:
 <div class="cv-section">
   <h2 class="cv-section-title"><i class="fas fa-hands-helping"></i> Service & Volunteer Work</h2>
 
-  <ul style="list-style: none; padding: 0;">
-    <li style="padding: 0.8rem; background: #f8f9fa; border-radius: 8px; margin-bottom: 0.5rem;">
-      <strong><i class="fas fa-users" style="color: #667eea;"></i> Mentorship:</strong> Supervised 2 Master's and 2 Bachelor's thesis students (2021 - present)
-    </li>
-    <li style="padding: 0.8rem; background: #f8f9fa; border-radius: 8px; margin-bottom: 0.5rem;">
-      <strong><i class="fas fa-calendar-alt" style="color: #667eea;"></i> Conference Service:</strong> Organizing-committee member, Graz BCI Conference 2024
-    </li>
-    <li style="padding: 0.8rem; background: #f8f9fa; border-radius: 8px; margin-bottom: 0.5rem;">
-      <strong><i class="fas fa-search" style="color: #667eea;"></i> Scientific Review:</strong> IEEE Trans. Biomedical Eng., Scientific Reports, IEEE Trans. NSRE, Frontiers in Human Neuroscience
-    </li>
-  </ul>
+  <div class="service-item">
+    <strong><i class="fas fa-users" style="color: #667eea;"></i> Mentorship:</strong> Supervised 2 Master's and 2 Bachelor's thesis students (2021 - present)
+  </div>
+  <div class="service-item">
+    <strong><i class="fas fa-calendar-alt" style="color: #667eea;"></i> Conference Service:</strong> Organizing-committee member, Graz BCI Conference 2024
+  </div>
+  <div class="service-item">
+    <strong><i class="fas fa-search" style="color: #667eea;"></i> Scientific Review:</strong> IEEE Trans. Biomedical Eng., Scientific Reports, IEEE Trans. NSRE, Frontiers in Human Neuroscience
+  </div>
 </div>
 
 <div class="cv-section">
@@ -396,15 +423,15 @@ redirect_from:
 
   <div class="award-item">
     <span class="award-year">2025</span>
-    <span class="award-text">Teaching Grant for Joint Online Course (15k) - Graz University of Technology</span>
+    <span class="award-text">Teaching Grant for Joint Online Course (€15k) - Graz University of Technology</span>
   </div>
   <div class="award-item">
     <span class="award-year">2024</span>
-    <span class="award-text">International Communication Funding (2k) - Austrian Research Association</span>
+    <span class="award-text">International Communication Funding (€2k) - Austrian Research Association</span>
   </div>
   <div class="award-item">
     <span class="award-year">2024</span>
-    <span class="award-text">Austrian Marshall Plan Scholarship (7.5k) - EU-US Research Exchange</span>
+    <span class="award-text">Austrian Marshall Plan Scholarship (€7.5k) - EU-US Research Exchange</span>
   </div>
   <div class="award-item">
     <span class="award-year">2020</span>
@@ -424,25 +451,3 @@ redirect_from:
   </div>
 </div>
 
-<div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-user-tie"></i> References</h2>
-
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
-    <div class="reference-card">
-      <h4>Gernot R. Muller-Putz</h4>
-      <div class="title">Full Professor, Head of Institute of Neural Engineering<br>Graz University of Technology, Austria</div>
-      <div class="email"><i class="fas fa-envelope"></i> <a href="mailto:gernot.mueller@tugraz.at">gernot.mueller@tugraz.at</a></div>
-    </div>
-    <div class="reference-card">
-      <h4>Sepideh Hajipour Sardouie</h4>
-      <div class="title">Assistant Professor, Electrical Engineering Department<br>Sharif University of Technology, Iran</div>
-      <div class="email"><i class="fas fa-envelope"></i> <a href="mailto:sepideh.hajipour@sharif.edu">sepideh.hajipour@sharif.edu</a></div>
-    </div>
-  </div>
-</div>
-
-<div class="cv-section">
-  <h2 class="cv-section-title"><i class="fas fa-file-alt"></i> Publications</h2>
-
-  <p>See the full list on the <a href="/publications/" style="color: #667eea; font-weight: 500;">Publications page</a> or visit my <a href="https://scholar.google.com/citations?user=2ZODsn0AAAAJ&hl=en" style="color: #667eea; font-weight: 500;">Google Scholar profile</a>.</p>
-</div>
