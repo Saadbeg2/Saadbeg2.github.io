@@ -1,4 +1,12 @@
-# Biography
+---
+permalink: /
+titile: "About me"
+excerpt: "About me"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
 
 I'm a third year postgraduate student from [Peking University](https://www.pku.edu.cn/), Beijing, China. I'm currently pursuing the Master’s degree at the School of Mechnics and Engineering Science.
 
