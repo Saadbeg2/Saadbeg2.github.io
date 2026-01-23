@@ -14,3 +14,43 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+
+<!-- Custom: hide site title in masthead + change its link to /talks/ -->
+<style>
+  /* Hide site title (common selectors in academicpages / Minimal Mistakes) */
+  .masthead__title,
+  a.site-title,
+  .site-title {
+    display: none !important;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Try common selectors for the site title link
+    const selectors = [
+      'a.site-title',
+      '.masthead__title a',
+      'a.masthead__title'
+    ];
+
+    let link = null;
+    for (const sel of selectors) {
+      link = document.querySelector(sel);
+      if (link) break;
+    }
+
+    // Fallback: find the anchor whose text matches site.title
+    if (!link) {
+      const titleText = ('{{ site.title }}' || '').trim();
+      if (titleText) {
+        const anchors = Array.from(document.querySelectorAll('a'));
+        link = anchors.find(a => (a.textContent || '').trim() === titleText);
+      }
+    }
+
+    if (link) {
+      link.setAttribute('href', '{{ "/talks/" | relative_url }}');
+    }
+  });
+</script>
