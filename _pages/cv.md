@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
+* Ph.D in Electronics & Communication Engineering, AGH University of Krakow - Poland, 2026 (expected)
+* M.E. in Electronics & Communication Engineering, Birla Institute of Technology Mesra - Ranchi, India 2014
 * B.S. in GitHub, GitHub University, 2012
 
 Work experience
