@@ -10,7 +10,7 @@
 
 main:
   - title: "Home"
-    url: /https://harunbansode.github.io/harun/
+    url: /home/
 
   - title: "Skills"
     url: /skills/
