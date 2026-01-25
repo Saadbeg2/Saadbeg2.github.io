@@ -13,8 +13,8 @@ title                    : Harun
 title_separator          : "-"
 name                     : &name "Harun"
 description              : &description " Python Developer | Aspiring Machine Learning Engineer "   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://harunbansode.github.io
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/harun"
+url                      : "https://harunbansode.github.io"
 repository               : "academicpages/academicpages.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
