@@ -13,14 +13,12 @@ Hi! I am currently a staff engineer and manager at Baidu Search Ads, working on 
 
 Research Interests
 ======
-My research interests are in **Computational Advertising** and **Generative AI**, and broader interests include reinforcement learning, federated learning, graph neural networks and their applications in advertising, search and recommendation.    
+My research interests are in **Computational Advertising** and **Generative AI**.    
 
 News
 =====
 * Jan. 2025: My paper about latent diffusion for diversifying ad text generation was accepted at WWW 2025 Companion.  
 * Jul. 2024: Our GenAI-powered Ad Creative team was named a Top-8 candidate for the 2024 Baidu Highest Award ("百度最高奖"候选Top8). 
-* Aug. 2023: Our paper about multi-scenario pretraining for ad ranking was accepted at CIKM 2023. <a href="https://arxiv.org/pdf/2302.02636.pdf" target="_blank">[Paper]</a>     
-* May. 2023: A first-authored paper about reinforcement learning for impression pacing in brand advertising was accepted at KDD 2023. <a href="https://arxiv.org/pdf/2302.02592.pdf" target="_blank">[Paper]</a>    
 
 
 Experience and Education
