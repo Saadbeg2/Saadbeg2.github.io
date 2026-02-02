@@ -23,7 +23,7 @@ repository               : "Saadbeg2/Saadbeg2.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/profile.jpg"
+  avatar           : "/images/profile.jpeg"
   name             : "Saad Salman Beg"
   bio              : "Computer Science student at the University of Houston."
   location         : "Houston, TX"
