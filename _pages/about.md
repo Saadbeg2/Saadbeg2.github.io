@@ -18,5 +18,5 @@ I am a Computer Science student at the University of Houston with interests in c
 
 ### Links
 - Department of Computer Science: https://www.cs.uh.edu/
-- LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN
+- LinkedIn: https://www.linkedin.com/in/ssbeguh/
 - Resume (PDF): /files/Saad_Salman_Beg_Resume.pdf
