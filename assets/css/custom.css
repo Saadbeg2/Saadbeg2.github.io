@@ -64,3 +64,24 @@
 .project-card h3 a:hover {
   text-decoration: underline;
 }
+
+/* Projects: back link (works in light + dark) */
+.project-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 2rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--global-border-color);
+  background: transparent;
+  color: var(--global-text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.project-back-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+}
