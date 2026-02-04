@@ -5,6 +5,10 @@ permalink: /projects/cloudpulse/
 author_profile: true
 ---
 
+<a class="btn btn--light-outline" href="/projects/">← Back to Projects</a>
+
+<br><br>
+
 CloudPulse is a React-based monitoring dashboard designed to provide visibility into multi-region AWS infrastructure.
 
 ### What it does
