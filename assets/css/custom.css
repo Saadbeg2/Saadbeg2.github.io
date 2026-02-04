@@ -65,20 +65,39 @@
   text-decoration: underline;
 }
 
-/* Projects: back button (works in light + dark) */
+/* Projects: back button (light + dark safe) */
 .project-back-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
   margin-top: 2rem;
-  padding: 0.55rem 0.85rem;
+  padding: 0.55rem 0.95rem;
+
   border-radius: 10px;
-  border: 1px solid var(--global-border-color);
-  background: var(--global-bg-color);
+  border: 1.5px solid var(--global-text-color);
+
+  background-color: transparent;
   color: var(--global-text-color);
-  text-decoration: none;
+
   font-size: 0.9rem;
+  font-weight: 600;
+
+  text-decoration: none !important;
+  transition: all 0.18s ease;
 }
 
+/* Hover / focus */
 .project-back-btn:hover {
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.10);
+  background-color: var(--global-text-color);
+  color: var(--global-bg-color);
   transform: translateY(-1px);
+}
+
+/* Kill underline in all states */
+.project-back-btn:link,
+.project-back-btn:visited,
+.project-back-btn:hover,
+.project-back-btn:active {
+  text-decoration: none !important;
 }
