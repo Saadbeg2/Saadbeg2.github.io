@@ -1,28 +1,26 @@
 ---
 layout: single
-title: "Home"
+title: ""
 permalink: /
 author_profile: true
 ---
+
 ## Saad Salman Beg
 
-**Computer Science Student · Cloud & Systems Engineering Focus**
+**Computer Science Student · Cloud & Systems Engineering Focus**  
+University of Houston · Expected Graduation: Spring 2026
 
-I am a Computer Science student at the University of Houston with a strong interest in **cloud infrastructure, distributed systems, and security-aware system design**. I focus on building hands-on technical projects that reflect real-world engineering problems rather than academic exercises.
+### Summary
+I build practical, hands-on projects focused on cloud infrastructure, distributed systems, and security-aware system design. This site is a portfolio of my technical work, experience, and ongoing learning.
 
-I am currently an **AWS Cloud Support Associate Intern**, where I completed structured technical training across core AWS services and earned multiple cloud certifications while working through internal labs and architecture-focused assignments.
+### What I’m focused on
+- AWS architecture, networking, and observability fundamentals  
+- Building and shipping real projects (cloud + full stack)  
+- Security-aware design and troubleshooting mindset  
 
-Born in **Fort Worth, Texas** and raised in **Pakistan**, I bring a global perspective while being a **U.S. citizen**, fully authorized to work in the United States.
-
-This site serves as a professional portfolio to document my work, experience, and technical growth.
-
-Explore my **[Projects](/projects/)**, **[Experience](/experience/)**, or **[download my resume](/files/Saad_Salman_Beg_Resume.pdf)**.
+### Highlights
+- Multi-region AWS monitoring dashboard (CloudPulse)  
+- Fitness planning web app (FitPlan Pro)  
+- Systems programming project: multithreaded Shannon coding encoder  
 
 ---
-
-### Current Focus
-
-- Cloud infrastructure and AWS architecture fundamentals  
-- Distributed systems and backend-oriented development  
-- Security-conscious system design  
-- Building production-minded, end-to-end projects
