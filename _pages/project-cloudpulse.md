@@ -20,4 +20,4 @@ React, AWS SDK, Charting/visualization
 
 <br>
 
-<a href="/projects/" aria-label="Back to Projects">← Back</a>
+<a href="/projects/" class="project-back-link">← Back to Projects</a>
