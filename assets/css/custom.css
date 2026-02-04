@@ -65,23 +65,20 @@
   text-decoration: underline;
 }
 
-/* Projects: back link (works in light + dark) */
-.project-back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
+/* Projects: back button (works in light + dark) */
+.project-back-btn {
+  display: inline-block;
   margin-top: 2rem;
-  padding: 0.45rem 0.75rem;
+  padding: 0.55rem 0.85rem;
   border-radius: 10px;
   border: 1px solid var(--global-border-color);
-  background: transparent;
+  background: var(--global-bg-color);
   color: var(--global-text-color);
   text-decoration: none;
   font-size: 0.9rem;
 }
 
-.project-back-link:hover {
+.project-back-btn:hover {
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.10);
   transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  text-decoration: none;
 }
