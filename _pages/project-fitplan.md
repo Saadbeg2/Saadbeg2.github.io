@@ -4,6 +4,9 @@ title: "FitPlan Pro — Personalized Workout Planning Web App"
 permalink: /projects/fitplan-pro/
 author_profile: true
 ---
+<a class="btn btn--light-outline" href="/projects/">← Back to Projects</a>
+
+<br><br>
 
 FitPlan Pro is a personal web app focused on personalized workout planning and progress tracking.
 
