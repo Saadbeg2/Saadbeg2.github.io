@@ -47,6 +47,24 @@ tracks progress, and manages user profiles.
 
 <div class="project-card">
   <h3>
+    <a href="/projects/insurance-charges/">
+      Predicting Insurance Charges (Decision Trees + Logistic Regression)
+    </a>
+  </h3>
+
+  <p>
+    Academic regression/classification project analyzing how demographics and health factors relate to insurance costs using repeated train/test splits.
+  </p>
+
+  <div class="project-tags">
+    <span class="project-tag">Academic Project</span>
+    <span class="project-tag">R</span>
+    <span class="project-tag">Decision Trees</span>
+    <span class="project-tag">Logistic Regression</span>
+  </div>
+</div>
+<div class="project-card">
+  <h3>
     <a href="/projects/shannon-encoder/">
       Shannon Coding Multithreaded Encoder
     </a>
