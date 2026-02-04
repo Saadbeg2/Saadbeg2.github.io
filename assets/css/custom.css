@@ -10,8 +10,8 @@
   padding:18px;
   border-radius:14px;
   border:1px solid rgba(0,0,0,0.12);
-  text-decoration:none;
-  background: rgba(255,255,255,0.65);
+  text-decoration:none !important;
+  background: rgba(255,255,255,0.9);
   transition: transform .15s ease, box-shadow .15s ease;
 }
 
@@ -27,11 +27,14 @@ html[data-theme="dark"] .project-card{
 
 .project-card h3{
   margin:0 0 8px 0;
+  color: inherit;
 }
 
 .project-card p{
   margin:0 0 12px 0;
   line-height:1.45;
+  color: inherit;
+  opacity: .9;
 }
 
 .project-tags{
@@ -45,7 +48,6 @@ html[data-theme="dark"] .project-card{
   padding:4px 10px;
   border-radius:999px;
   border:1px solid rgba(0,0,0,0.12);
-  opacity:.95;
 }
 
 html[data-theme="dark"] .project-tags span{
