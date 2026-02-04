@@ -7,15 +7,30 @@ author_profile: true
 
 ## Projects
 
-### CloudPulse — Multi-Region AWS Monitoring Dashboard
-- React-based monitoring dashboard for multi-region AWS infrastructure.
-- Live metrics, costs, security insights across 7+ regions.
-- AWS services: EC2, CloudWatch, CloudTrail, Cost Explorer, S3, Transit Gateway.
+<div class="project-grid">
 
-### FitPlan Pro — Personalized Workout Planning Web App
-- Workout plans tailored to goals, profile management, and progress tracking.
-- Front-end: HTML5, CSS3, JavaScript (responsive design).
+  <a class="project-card" href="/projects/cloudpulse/">
+    <h3>CloudPulse — Multi-Region AWS Monitoring Dashboard</h3>
+    <p>React-based dashboard for multi-region AWS monitoring with cost, performance, and security visibility.</p>
+    <div class="project-tags">
+      <span>AWS</span><span>React</span><span>CloudWatch</span><span>CloudTrail</span>
+    </div>
+  </a>
 
-### Shannon Coding Multithreaded Encoder
-- Multithreaded program using POSIX threads to generate Shannon codes and encode messages.
-- Focus on clean, thread-safe design and sorted frequency tables.
+  <a class="project-card" href="/projects/fitplan-pro/">
+    <h3>FitPlan Pro — Personalized Workout Planning Web App</h3>
+    <p>Fitness planning web app with tailored routines, profile management, and progress tracking.</p>
+    <div class="project-tags">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span>
+    </div>
+  </a>
+
+  <a class="project-card" href="/projects/shannon-encoder/">
+    <h3>Shannon Coding Multithreaded Encoder</h3>
+    <p>POSIX-threaded encoder that generates Shannon codes, builds frequency tables, and encodes messages safely.</p>
+    <div class="project-tags">
+      <span>C/C++</span><span>POSIX Threads</span><span>Compression</span>
+    </div>
+  </a>
+
+</div>
