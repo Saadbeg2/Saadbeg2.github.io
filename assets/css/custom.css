@@ -101,3 +101,16 @@
 .project-back-btn:active {
   text-decoration: none !important;
 }
+
+/* ===== Wider content ONLY when sidebar is removed ===== */
+/* Pages with author_profile: false render without the sidebar */
+.page__inner-wrap .page__content {
+  max-width: 980px;   /* tweak 900–1100 */
+}
+
+/* Only widen the overall container a bit on desktop */
+@media (min-width: 1024px) {
+  .page {
+    max-width: 1180px;
+  }
+}
