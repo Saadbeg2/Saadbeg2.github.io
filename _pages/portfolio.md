@@ -7,30 +7,47 @@ author_profile: true
 
 ## Projects
 
-<div class="project-grid">
+<div class="projects-grid">
 
-  <a class="project-card" href="/projects/cloudpulse/">
-    <h3>CloudPulse — Multi-Region AWS Monitoring Dashboard</h3>
-    <p>React-based dashboard for multi-region AWS monitoring with cost, performance, and security visibility.</p>
-    <div class="project-tags">
-      <span>AWS</span><span>React</span><span>CloudWatch</span><span>CloudTrail</span>
-    </div>
-  </a>
+<div class="project-card">
+<h3>CloudPulse — Multi-Region AWS Monitoring Dashboard</h3>
+<p>
+A React-based monitoring dashboard providing real-time visibility into
+multi-region AWS infrastructure, including cost, performance, and security metrics.
+</p>
+<div class="project-tags">
+<span class="project-tag">AWS</span>
+<span class="project-tag">React</span>
+<span class="project-tag">CloudWatch</span>
+<span class="project-tag">CloudTrail</span>
+</div>
+</div>
 
-  <a class="project-card" href="/projects/fitplan-pro/">
-    <h3>FitPlan Pro — Personalized Workout Planning Web App</h3>
-    <p>Fitness planning web app with tailored routines, profile management, and progress tracking.</p>
-    <div class="project-tags">
-      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span>
-    </div>
-  </a>
+<div class="project-card">
+<h3>FitPlan Pro — Personalized Workout Planning Web App</h3>
+<p>
+A responsive fitness application that generates personalized workout plans,
+tracks progress, and manages user profiles.
+</p>
+<div class="project-tags">
+<span class="project-tag">HTML</span>
+<span class="project-tag">CSS</span>
+<span class="project-tag">JavaScript</span>
+<span class="project-tag">Responsive UI</span>
+</div>
+</div>
 
-  <a class="project-card" href="/projects/shannon-encoder/">
-    <h3>Shannon Coding Multithreaded Encoder</h3>
-    <p>POSIX-threaded encoder that generates Shannon codes, builds frequency tables, and encodes messages safely.</p>
-    <div class="project-tags">
-      <span>C/C++</span><span>POSIX Threads</span><span>Compression</span>
-    </div>
-  </a>
+<div class="project-card">
+<h3>Shannon Coding Multithreaded Encoder</h3>
+<p>
+A multithreaded POSIX-based encoder that generates Shannon codes,
+builds frequency tables, and safely encodes messages.
+</p>
+<div class="project-tags">
+<span class="project-tag">C/C++</span>
+<span class="project-tag">POSIX Threads</span>
+<span class="project-tag">Compression</span>
+</div>
+</div>
 
 </div>
