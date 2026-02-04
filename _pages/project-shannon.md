@@ -17,4 +17,4 @@ C/C++, POSIX Threads
 
 <br>
 
-<a href="/projects/" class="project-back-link">← Back to Projects</a>
+<a href="/projects/" class="project-back-btn">← Back to Projects</a>
