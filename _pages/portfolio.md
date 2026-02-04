@@ -53,7 +53,8 @@ tracks progress, and manages user profiles.
   </h3>
 
   <p>
-    Academic regression/classification project analyzing how demographics and health factors relate to insurance costs using repeated train/test splits.
+    <strong>Academic Project.</strong>
+    Regression/classification project analyzing how demographic and health factors relate to insurance costs using repeated train/test splits.
   </p>
 
   <div class="project-tags">
@@ -63,6 +64,7 @@ tracks progress, and manages user profiles.
     <span class="project-tag">Logistic Regression</span>
   </div>
 </div>
+
 <div class="project-card">
   <h3>
     <a href="/projects/shannon-encoder/">
@@ -77,10 +79,11 @@ tracks progress, and manages user profiles.
     concurrent execution.
   </p>
 
-  <div class="project-tags">
-    <span class="project-tag">C / C++</span>
-    <span class="project-tag">POSIX Threads</span>
-    <span class="project-tag">Data Compression</span>
-    <span class="project-tag">Operating Systems</span>
-  </div>
+<div class="project-tags">
+  <span class="project-tag">Academic Project</span>
+  <span class="project-tag">C / C++</span>
+  <span class="project-tag">POSIX Threads</span>
+  <span class="project-tag">Data Compression</span>
+  <span class="project-tag">Operating Systems</span>
+</div>
 </div>
