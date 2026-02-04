@@ -11,8 +11,8 @@ main:
   - title: "About"
     url: /
 
-  - title: "Resume"
-    url: /cv/
+- title: "Experience"
+  url: /experience/
 
   - title: "Projects"
     url: /projects/
