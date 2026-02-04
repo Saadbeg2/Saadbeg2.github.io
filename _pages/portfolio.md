@@ -10,7 +10,11 @@ author_profile: true
 <div class="projects-grid">
 
 <div class="project-card">
-<h3>CloudPulse — Multi-Region AWS Monitoring Dashboard</h3>
+<h3>
+  <a href="/projects/cloudpulse/">
+    CloudPulse — Multi-Region AWS Monitoring Dashboard
+  </a>
+</h3>
 <p>
 A React-based monitoring dashboard providing real-time visibility into
 multi-region AWS infrastructure, including cost, performance, and security metrics.
@@ -24,7 +28,11 @@ multi-region AWS infrastructure, including cost, performance, and security metri
 </div>
 
 <div class="project-card">
-<h3>FitPlan Pro — Personalized Workout Planning Web App</h3>
+<h3>
+  <a href="/projects/fitplan-pro/">
+    FitPlan Pro — Personalized Workout Planning Web App
+  </a>
+</h3>
 <p>
 A responsive fitness application that generates personalized workout plans,
 tracks progress, and manages user profiles.
@@ -38,7 +46,11 @@ tracks progress, and manages user profiles.
 </div>
 
 <div class="project-card">
-<h3>Shannon Coding Multithreaded Encoder</h3>
+<h3>
+  <a href="/projects/shannon-encoder/">
+    Shannon Coding Multithreaded Encoder
+  </a>
+</h3>
 <p>
 A multithreaded POSIX-based encoder that generates Shannon codes,
 builds frequency tables, and safely encodes messages.
