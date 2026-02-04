@@ -11,7 +11,7 @@ author_profile: true
 University of Houston  
 Expected Graduation: **Spring 2026**
 
-📧 **saadbeg2@gmail.com**
+**saadbeg2@gmail.com**
 
 ---
 
