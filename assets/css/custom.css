@@ -114,3 +114,12 @@
     max-width: 1180px;
   }
 }
+
+/* Force wide pages to actually be wide */
+.layout--single.wide .page__inner-wrap {
+  max-width: 1180px;
+}
+
+.layout--single.wide .page__content {
+  max-width: none;
+}
