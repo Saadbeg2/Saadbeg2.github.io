@@ -3,8 +3,8 @@ layout: single
 title: "Projects"
 permalink: /projects/
 author_profile: false
+classes: wide
 ---
-
 ## Projects
 
 <div class="projects-grid">
