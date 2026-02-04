@@ -9,12 +9,16 @@ author_profile: true
 
 <br><br>
 
-This project implements Shannon coding with a multithreaded design using POSIX threads.
+This project implements Shannon coding using a multithreaded design built with POSIX threads, focusing on correctness, performance, and clean concurrency.
 
 ### Highlights
-- Builds frequency tables and generates Shannon codes
-- Encodes input messages using derived codes
-- Emphasizes thread-safe design and clean, well-structured output
+- Constructs frequency tables and generates Shannon codes
+- Encodes input messages using derived symbol codes
+- Emphasizes thread-safe execution and structured output formatting
 
 ### Tech Stack
-C/C++, POSIX Threads
+C / C++, POSIX Threads
+
+<hr>
+
+<a class="btn btn--light-outline" href="/projects/">← Back to Projects</a>
