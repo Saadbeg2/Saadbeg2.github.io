@@ -46,20 +46,23 @@ tracks progress, and manages user profiles.
 </div>
 
 <div class="project-card">
-<h3>
-  <a href="/projects/shannon-encoder/">
-    Shannon Coding Multithreaded Encoder
-  </a>
-</h3>
-<p>
-A multithreaded POSIX-based encoder that generates Shannon codes,
-builds frequency tables, and safely encodes messages.
-</p>
-<div class="project-tags">
-<span class="project-tag">C/C++</span>
-<span class="project-tag">POSIX Threads</span>
-<span class="project-tag">Compression</span>
-</div>
-</div>
+  <h3>
+    <a href="/projects/shannon-encoder/">
+      Shannon Coding Multithreaded Encoder
+    </a>
+  </h3>
 
+  <p>
+    <strong>Academic Project.</strong>
+    A multithreaded POSIX-based encoder that generates Shannon codes,
+    builds frequency tables, and safely encodes messages using
+    concurrent execution.
+  </p>
+
+  <div class="project-tags">
+    <span class="project-tag">C / C++</span>
+    <span class="project-tag">POSIX Threads</span>
+    <span class="project-tag">Data Compression</span>
+    <span class="project-tag">Operating Systems</span>
+  </div>
 </div>
