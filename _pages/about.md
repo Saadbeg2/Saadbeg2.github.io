@@ -4,28 +4,25 @@ title: "About"
 permalink: /
 author_profile: true
 ---
-
 ## Saad Salman Beg
 
-**B.S. in Computer Science**  
-University of Houston  
-Expected Graduation: **Spring 2026**
+**Computer Science Student · Cloud & Systems Engineering Focus**
 
-**saadbeg2@gmail.com**
+I am a Computer Science student at the University of Houston with a strong interest in **cloud infrastructure, distributed systems, and security-aware system design**. I focus on building hands-on technical projects that reflect real-world engineering problems rather than academic exercises.
 
----
+I am currently an **AWS Cloud Support Associate Intern**, where I completed structured technical training across core AWS services and earned multiple cloud certifications while working through internal labs and architecture-focused assignments.
 
-### About Me
+Born in **Fort Worth, Texas** and raised in **Pakistan**, I bring a global perspective while being a **U.S. citizen**, fully authorized to work in the United States.
 
-I am a Computer Science student at the University of Houston with strong interests in **cloud computing, data analytics, and cybersecurity**.
+This site serves as a professional portfolio to document my work, experience, and technical growth.
 
-I focus on building **hands-on technical projects** that demonstrate practical problem-solving, system design, and real-world application of concepts. This website serves as a **professional portfolio** to showcase my work, projects, and ongoing learning.
+Explore my **[Projects](/projects/)**, **[Experience](/experience/)**, or **[download my resume](/files/Saad_Salman_Beg_Resume.pdf)**.
 
 ---
 
 ### Current Focus
 
-- Cloud and distributed systems fundamentals  
-- Data analysis and backend-oriented development  
-- Security-aware system design  
-- Building and deploying real-world projects
+- Cloud infrastructure and AWS architecture fundamentals  
+- Distributed systems and backend-oriented development  
+- Security-conscious system design  
+- Building production-minded, end-to-end projects
