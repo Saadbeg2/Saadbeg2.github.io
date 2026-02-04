@@ -5,6 +5,10 @@ permalink: /projects/shannon-encoder/
 author_profile: true
 ---
 
+<a class="btn btn--light-outline" href="/projects/">← Back to Projects</a>
+
+<br><br>
+
 This project implements Shannon coding with a multithreaded design using POSIX threads.
 
 ### Highlights
