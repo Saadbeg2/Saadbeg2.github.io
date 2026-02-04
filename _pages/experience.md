@@ -4,38 +4,40 @@ title: "Experience"
 permalink: /experience/
 author_profile: true
 ---
+
 ## Experience
 
 ### Cloud Support Associate (Intern)
 **Amazon Web Services (AWS)**  
 *2024 – Present*
 
-- Worked on customer-facing cloud infrastructure issues involving EC2, IAM, VPC, and security configurations  
-- Troubleshot production incidents and analyzed logs to identify root causes  
-- Collaborated with engineers and mentors to resolve complex cloud service issues  
+- Support customers with cloud infrastructure issues across **EC2, IAM, VPC, and security configurations**
+- Troubleshoot production incidents by analyzing logs, metrics, and service behavior
+- Identify root causes and recommend resolutions aligned with AWS best practices
+- Collaborate with engineers and mentors to resolve complex cloud service issues and deepen understanding of distributed systems
 
 ---
 
-### Student Leadership & Technical Projects
+### Technical Projects & Academic Work
 **University of Houston**
 
-- Built and maintained a personal technical portfolio using Jekyll and GitHub Pages  
-- Designed and implemented full-stack and cloud-based projects (details in Projects section)  
-- Actively apply software engineering and systems concepts through hands-on work  
+- Built and maintain a **personal technical portfolio** using Jekyll and GitHub Pages
+- Design and implement **full-stack and cloud-based projects**, applying software engineering and systems concepts
+- Focus on hands-on development to strengthen skills in cloud computing, data analysis, and system design
 
 ---
 
 ## Certifications
 
-- **AWS Certified Cloud Practitioner** *(or “In Progress” if applicable)*  
-- **IBM Data Analyst Professional Certificate**  
+- **AWS Certified Cloud Practitioner**
+- **IBM Data Analyst Professional Certificate**
 - **CompTIA Security+** *(In Progress)*
 
 ---
 
 ## Resume
 
-You can view or download my full resume below:
+My full resume is available below:
 
 - 📄 **[View Resume (PDF)](/files/Saad_Salman_Beg_Resume.pdf)**
 - ⬇️ **[Download Resume](/files/Saad_Salman_Beg_Resume.pdf)**
