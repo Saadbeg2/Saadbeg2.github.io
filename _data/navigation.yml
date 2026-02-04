@@ -8,14 +8,15 @@
 #      Markdown formatted page while the second is generated using JSO.
 
 main:
-  - title: "About"
-    url: /
 
   - title: "Experience"
     url: /experience/
     
   - title: "Projects"
     url: /projects/
+
+  - title: "About"
+    url: /about_page/
 
 
 
