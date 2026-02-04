@@ -5,17 +5,13 @@ permalink: /projects/fitplan-pro/
 author_profile: true
 ---
 
-<a class="btn btn--light-outline" href="/projects/">← Back to Projects</a>
-
-<br><br>
-
-FitPlan Pro is a personal web application focused on building customized workout plans and tracking fitness progress over time.
+FitPlan Pro is a personal web app focused on personalized workout planning and progress tracking.
 
 ### Key Features
-- Goal-based workout plan generation
-- User profile management
-- Progress tracking and logging
-- Expanding exercise library
+- Goal-based workout planning
+- Profile management
+- Progress tracking
+- Exercise library (planned / expanding)
 
 ### Tech Stack
 HTML5, CSS3, JavaScript (responsive design)
@@ -23,6 +19,6 @@ HTML5, CSS3, JavaScript (responsive design)
 ### Status
 In Progress
 
-<hr>
+<br>
 
-<a class="btn btn--light-outline" href="/projects/">← Back to Projects</a>
+<a href="/projects/" aria-label="Back to Projects">← Back</a>
