@@ -34,7 +34,7 @@ multi-region AWS infrastructure, including cost, performance, and security metri
     </a>
   </h3>
   <p>
-    A mobile-first, offline-first fitness tracker built with vanilla JS, IndexedDB, and a service worker. Focused on weekly structure, streak accountability, and measurable progress.
+    A personal training system I use daily: offline-first, constraint-driven, and built to reduce decision fatigue through a fixed weekly structure, strict logging rules, and measurable progress tracking.
   </p>
   <div class="project-tags">
     <span class="project-tag">Vanilla JS</span>
@@ -51,7 +51,7 @@ multi-region AWS infrastructure, including cost, performance, and security metri
     </a>
   </h3>
   <p>
-    A pure frontend task manager with local persistence, configurable priority escalation rules, and one-click .ics calendar exports for urgent tasks.
+    A personal productivity system I rely on for execution under pressure, with local persistence, configurable priority escalation rules, and urgent-task calendar export through a focused .ics workflow.
   </p>
   <div class="project-tags">
     <span class="project-tag">HTML/CSS</span>
