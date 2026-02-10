@@ -28,21 +28,37 @@ multi-region AWS infrastructure, including cost, performance, and security metri
 </div>
 
 <div class="project-card">
-<h3>
-  <a href="/projects/fitplan-pro/">
-    FitPlan Pro — Personalized Workout Planning Web App
-  </a>
-</h3>
-<p>
-A responsive fitness application that generates personalized workout plans,
-tracks progress, and manages user profiles.
-</p>
-<div class="project-tags">
-<span class="project-tag">HTML</span>
-<span class="project-tag">CSS</span>
-<span class="project-tag">JavaScript</span>
-<span class="project-tag">Responsive UI</span>
+  <h3>
+    <a href="/projects/fitplan-pro-v2/">
+      FitPlan Pro v2 — Offline Fitness Tracking PWA
+    </a>
+  </h3>
+  <p>
+    A mobile-first, offline-first fitness tracker built with vanilla JS, IndexedDB, and a service worker. Focused on weekly structure, streak accountability, and measurable progress.
+  </p>
+  <div class="project-tags">
+    <span class="project-tag">Vanilla JS</span>
+    <span class="project-tag">IndexedDB</span>
+    <span class="project-tag">PWA</span>
+    <span class="project-tag">Chart.js</span>
+  </div>
 </div>
+
+<div class="project-card">
+  <h3>
+    <a href="/projects/taskmanager/">
+      TaskManager — Priority + Calendar Workflow
+    </a>
+  </h3>
+  <p>
+    A pure frontend task manager with local persistence, configurable priority escalation rules, and one-click .ics calendar exports for urgent tasks.
+  </p>
+  <div class="project-tags">
+    <span class="project-tag">HTML/CSS</span>
+    <span class="project-tag">Vanilla JS</span>
+    <span class="project-tag">localStorage</span>
+    <span class="project-tag">iCalendar (.ics)</span>
+  </div>
 </div>
 
 <div class="project-card">
@@ -51,12 +67,10 @@ tracks progress, and manages user profiles.
       Predicting Insurance Charges (Decision Trees + Logistic Regression)
     </a>
   </h3>
-
   <p>
     <strong>Academic Project.</strong>
-    Regression/classification project analyzing how demographic and health factors relate to insurance costs using repeated train/test splits.
+    Regression + classification analysis on the Medical Insurance Cost dataset using repeated 80/20 train-test splits, pruning, and a high-cost classifier.
   </p>
-
   <div class="project-tags">
     <span class="project-tag">Academic Project</span>
     <span class="project-tag">R</span>
@@ -71,19 +85,19 @@ tracks progress, and manages user profiles.
       Shannon Coding Multithreaded Encoder
     </a>
   </h3>
-
   <p>
     <strong>Academic Project.</strong>
     A multithreaded POSIX-based encoder that generates Shannon codes,
     builds frequency tables, and safely encodes messages using
     concurrent execution.
   </p>
-
-<div class="project-tags">
-  <span class="project-tag">Academic Project</span>
-  <span class="project-tag">C / C++</span>
-  <span class="project-tag">POSIX Threads</span>
-  <span class="project-tag">Data Compression</span>
-  <span class="project-tag">Operating Systems</span>
+  <div class="project-tags">
+    <span class="project-tag">Academic Project</span>
+    <span class="project-tag">C / C++</span>
+    <span class="project-tag">POSIX Threads</span>
+    <span class="project-tag">Data Compression</span>
+    <span class="project-tag">Operating Systems</span>
+  </div>
 </div>
+
 </div>
