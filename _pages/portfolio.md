@@ -29,6 +29,26 @@ multi-region AWS infrastructure, including cost, performance, and security metri
 
 <div class="project-card">
   <h3>
+    <a href="/projects/job-application-tracker/">
+      Job Application Accountability Tracker
+    </a>
+  </h3>
+  <p>
+    Full-stack Next.js dashboard for tracking job applications, reviewing Gmail-detected updates, managing follow-up tasks, syncing clean tracker data to Google Sheets, and sending daily accountability reports.
+  </p>
+  <div class="project-tags">
+    <span class="project-tag">Next.js</span>
+    <span class="project-tag">TypeScript</span>
+    <span class="project-tag">Prisma</span>
+    <span class="project-tag">SQLite</span>
+    <span class="project-tag">Gmail API</span>
+    <span class="project-tag">Google Sheets API</span>
+    <span class="project-tag">Full-Stack</span>
+  </div>
+</div>
+
+<div class="project-card">
+  <h3>
     <a href="/projects/fitplan-pro-v2/">
       FitPlan Pro v2 — Offline Fitness Tracking PWA
     </a>
