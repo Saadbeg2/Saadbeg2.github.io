@@ -7,11 +7,13 @@ author_profile: false
 
 ## Overview
 
-The **Serverless Incident Response Pipeline** is an event-driven AWS workflow that turns real CloudWatch alarm events into tracked incidents. It uses Lambda, CloudWatch Alarms, EventBridge, DynamoDB, SNS, and AWS SAM to model a realistic incident response path without relying on a generic CRUD interface.
+The **Serverless Incident Response Pipeline** is a validated AWS serverless incident response workflow that turns real CloudWatch alarm events into DynamoDB incident records and SNS email alerts.
 
-The final validated flow is:
+This was not just a manually invoked Lambda demo. A real Lambda failure triggered a CloudWatch alarm, EventBridge invoked the response Lambda automatically, DynamoDB stored the incident, and SNS delivered an email alert.
 
-**Failure Simulator Lambda → CloudWatch Alarm → EventBridge Rule → Alarm-to-Incident Lambda → DynamoDB → SNS Email Alert**
+> **Validated architecture flow**
+>
+> Failure Simulator Lambda → CloudWatch Alarm → EventBridge Rule → Alarm-to-Incident Lambda → DynamoDB → SNS Email Alert
 
 The project was built for cloud engineering practice, with emphasis on AWS-native event routing, incident persistence, repeatable infrastructure deployment, and least-privilege IAM troubleshooting.
 
@@ -61,70 +63,64 @@ Validated deployed resources:
 
 ### Failure Simulator Lambda
 
-Built a Lambda function that intentionally fails so the pipeline can be validated against a real CloudWatch alarm instead of a manually fabricated event.
+- Created a Lambda function that intentionally raises an unhandled error.
+- Used the failure to validate the pipeline against a real CloudWatch alarm transition.
 
 ### CloudWatch Alarm
 
-Configured a CloudWatch alarm to monitor the simulator Lambda error metric and enter `ALARM` when the function fails.
+- Monitored the simulator Lambda error metric.
+- Confirmed the alarm entered `ALARM` after the failed invocation.
 
 ### EventBridge Routing
 
-Created an EventBridge rule that listens for the specific CloudWatch alarm state change and routes the event to the alarm processor Lambda automatically.
+- Created an EventBridge rule for the CloudWatch alarm state change.
+- Routed matching alarm events to the alarm-to-incident Lambda automatically.
 
 ### Alarm-to-Incident Lambda
 
-Built the response Lambda that processes the alarm event, derives incident fields, writes the incident to DynamoDB, and publishes an SNS notification.
+- Parsed the CloudWatch alarm event.
+- Derived incident fields such as ID, alarm name, severity, status, and source.
+- Wrote the incident to DynamoDB and published the SNS alert.
 
 ### DynamoDB Incident Store
 
-Created a DynamoDB-backed incident table to persist tracked incidents with fields such as alarm name, severity, status, source, and incident ID.
+- Created a DynamoDB-backed incident table.
+- Persisted incident records for tracking instead of treating alerts as transient messages.
 
 ### SNS Email Alerting
 
-Connected the response workflow to an SNS topic so a real email alert is sent when the incident is created.
+- Connected the response workflow to an SNS topic.
+- Confirmed a real email alert was received when the incident was created.
 
 ### SAM / CloudFormation Deployment
 
-Packaged and deployed the system with AWS SAM and CloudFormation, including Lambda functions, IAM permissions, DynamoDB, EventBridge, CloudWatch alarm resources, SNS, and S3-backed deployment artifacts.
+- Packaged and deployed the system with AWS SAM and CloudFormation.
+- Included Lambda functions, IAM permissions, DynamoDB, EventBridge, CloudWatch alarm resources, SNS, and S3-backed deployment artifacts.
 
 ## End-to-End Validation
 
-The final end-to-end test validated the full AWS event path:
+The final test validated the complete AWS event path from simulated Lambda failure to persisted incident and email alert. This confirmed that the response workflow was driven by a real CloudWatch alarm transition and automatic EventBridge routing, not just a local unit test or manually invoked processor Lambda.
+
+## Validation Evidence
+
+This project was validated with a real deployed AWS event flow rather than only local tests or manual Lambda invocation.
+
+Confirmed validation results:
 
 - Failure simulator Lambda returned `FunctionError: Unhandled`
 - CloudWatch alarm entered `ALARM`
 - EventBridge invoked the alarm-to-incident Lambda automatically
-- DynamoDB stored the incident record
+- DynamoDB stored an incident record with:
+  - `id`: `alarm-8a107dc637b96a30`
+  - `alarmName`: `sirp-failure-simulator-errors-sam-dev`
+  - `severity`: `HIGH`
+  - `status`: `OPEN`
+  - `source`: `cloudwatch`
 - SNS email alert was received
 - SAM/CloudFormation deployment succeeded
-
-Validated DynamoDB incident:
-
-- `id`: `alarm-8a107dc637b96a30`
-- `alarmName`: `sirp-failure-simulator-errors-sam-dev`
-- `severity`: `HIGH`
-- `status`: `OPEN`
-- `source`: `cloudwatch`
-
-Local validation also passed:
-
-- `python -m unittest discover -s tests` → 13 tests passed
-- `python -m compileall src tests` → passed
-- `sam validate --region us-east-1` → valid SAM template
-
-## Screenshot Evidence
-
-Planned screenshots for this page:
-
-- CloudFormation stack showing `UPDATE_COMPLETE`
-- CloudFormation outputs
-- Lambda functions list
-- Failure simulator Lambda invoke result
-- CloudWatch alarm in `ALARM`
-- EventBridge rule target
-- DynamoDB incident item
-- SNS email alert
-- Terminal output showing validation
+- `python -m unittest discover -s tests` passed with 13 tests
+- `python -m compileall src tests` passed
+- `sam validate --region us-east-1` returned a valid SAM template
 
 ## Challenges and Troubleshooting
 
@@ -161,11 +157,11 @@ The result is a practical cloud engineering project that shows event-driven desi
 
 ## Resume-Ready Bullets
 
-- Built an event-driven AWS incident response pipeline using Lambda, CloudWatch Alarms, EventBridge, DynamoDB, SNS, and AWS SAM.
-- Implemented alarm-to-incident processing that converts real CloudWatch alarm events into tracked DynamoDB incidents with severity, status, source, and incident ID fields.
-- Deployed repeatable serverless infrastructure with SAM/CloudFormation, including Lambda functions, EventBridge routing, CloudWatch alarm resources, DynamoDB, SNS, IAM roles, and S3 deployment artifacts.
-- Validated the full response path from unhandled Lambda failure to CloudWatch `ALARM`, automatic EventBridge invocation, DynamoDB persistence, and SNS email alert delivery.
-- Troubleshot least-privilege IAM permissions, CloudWatch Logs, EventBridge targets, and SAM template validation across the end-to-end workflow.
+- Built a serverless AWS incident response pipeline that converts CloudWatch alarm events into DynamoDB incident records and SNS email alerts.
+- Deployed repeatable infrastructure with AWS SAM/CloudFormation, including Lambda, DynamoDB, SNS, CloudWatch Alarms, EventBridge, IAM, and CloudWatch Logs.
+- Validated the full event flow by triggering a Lambda failure, confirming CloudWatch alarm activation, EventBridge routing, DynamoDB persistence, and SNS email delivery.
+- Implemented alarm-to-incident processing logic with local validation through 13 passing unit tests, Python compile checks, and SAM template validation.
+- Troubleshot IAM permissions across Lambda, EventBridge, DynamoDB, SNS, CloudWatch Logs, and CloudWatch Alarms.
 
 ## Future Improvements
 
@@ -174,7 +170,6 @@ The result is a practical cloud engineering project that shows event-driven desi
 - Add richer severity mapping based on alarm name, namespace, or environment
 - Add structured CloudWatch Logs queries for operational debugging
 - Add deployment environments beyond `dev`
-- Add screenshots directly to the portfolio page once the evidence images are finalized
 
 ## Back to Projects link
 
