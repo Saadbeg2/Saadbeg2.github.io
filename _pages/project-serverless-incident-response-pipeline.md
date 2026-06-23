@@ -103,24 +103,15 @@ The final test validated the complete AWS event path from simulated Lambda failu
 
 ## Validation Evidence
 
-This project was validated with a real deployed AWS event flow rather than only local tests or manual Lambda invocation.
-
-Confirmed validation results:
-
+The project was validated through AWS service state checks, CLI output, and the received SNS email alert:
+- CloudFormation stack `sirp-dev` reached `UPDATE_COMPLETE`
 - Failure simulator Lambda returned `FunctionError: Unhandled`
-- CloudWatch alarm entered `ALARM`
-- EventBridge invoked the alarm-to-incident Lambda automatically
-- DynamoDB stored an incident record with:
-  - `id`: `alarm-8a107dc637b96a30`
-  - `alarmName`: `sirp-failure-simulator-errors-sam-dev`
-  - `severity`: `HIGH`
-  - `status`: `OPEN`
-  - `source`: `cloudwatch`
-- SNS email alert was received
-- SAM/CloudFormation deployment succeeded
-- `python -m unittest discover -s tests` passed with 13 tests
-- `python -m compileall src tests` passed
-- `sam validate --region us-east-1` returned a valid SAM template
+- CloudWatch alarm `sirp-failure-simulator-errors-sam-dev` entered `ALARM`
+- EventBridge rule `sirp-failure-simulator-alarm-rule-sam-dev` invoked the alarm processor automatically
+- DynamoDB stored incident `alarm-8a107dc637b96a30`
+- SNS email alert was received after the incident was created
+
+Screenshots can be added later as supporting visuals, but this section should not be presented as planned screenshots.
 
 ## Challenges and Troubleshooting
 
