@@ -29,6 +29,28 @@ multi-region AWS infrastructure, including cost, performance, and security metri
 
 <div class="project-card">
   <h3>
+    <a href="/projects/serverless-incident-response-pipeline/">
+      Serverless Incident Response Pipeline
+    </a>
+  </h3>
+  <p>
+    Event-driven AWS incident response pipeline that converts real CloudWatch alarm events into tracked DynamoDB incidents and SNS email alerts using Lambda, EventBridge, and SAM.
+  </p>
+  <div class="project-tags">
+    <span class="project-tag">AWS Lambda</span>
+    <span class="project-tag">CloudWatch</span>
+    <span class="project-tag">EventBridge</span>
+    <span class="project-tag">DynamoDB</span>
+    <span class="project-tag">SNS</span>
+    <span class="project-tag">AWS SAM</span>
+    <span class="project-tag">CloudFormation</span>
+    <span class="project-tag">IAM</span>
+    <span class="project-tag">Serverless</span>
+  </div>
+</div>
+
+<div class="project-card">
+  <h3>
     <a href="/projects/job-application-tracker/">
       Job Application Accountability Tracker
     </a>
